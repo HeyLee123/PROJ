@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confections by Clarenz - Feedback</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--HEADER-->
+            <header>
+                    <a href="#" class="logo"><img src="logo.png" height="50px"></a>
+                    
+                    <nav class="navbar">
+                        <a href="#">Home</a>
+                        <a href="About Us.html">About Us</a>
+                        <div class="dropdown">
+                            <a href="main-menu.html">Menu</a>
+                            <div class="dropdown-content">
+                                <a href="signatures-menu.html">Signatures</a>
+                                <a href="cakes-menu.html">Cakes, Pastries, and Bread</a>
+                                <a href="baked-menu.html">Baked Dishes</a>
+                            </div></div>
+                        <div class="dropdown">
+                            <a class="active" href="Feedback.html">Feedback</a>
+                            <div class="dropdown-content">
+                                <a href="Testimonials.html">Testimonials</a>
+                                <a href="Customer Gallery.html">Customer Gallery</a>
+                            </div></div>
+                        <div class="dropdown">
+                            <a href="#">Order Now</a>
+                            <div class="dropdown-content">
+                                <a href="Other Services.html">Other Services</a>
+                            </div></div>
+                        </div>
+                        <a href="Contact Us.html">Contact Us</a>
+                    </nav>
+
+                    <div class="icons">
+                        <i class="fas fa-bars" id="menu-bars"></i>
+                        <i class="fas fa-search" id="search-icon"></i>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+            </header>
+        <!--HEADER-->
+
+<div class="container">
+  <center><img src="feedback-logo.png" style = "width: 200px; margin-left: auto; margin-right: auto; display: block; padding-top: 3rem; margin-top: 150px;">
+  <h1>FEEDBACK</h1></center>
+</br></br>
+
+    <form action="action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Your email address..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="country">How would you like to rate our Signaure deserts?</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="Banana Choco chip Muffin">Excellent</option>
+            <option value="Pastel de Chocolate">Good</option>
+            <option value="Cheese Roll">Satisfactory</option>
+            <option value="Platters">Needs Improvement</option>
+            <option value="Platters">I have not tried them yet</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="country">How would you like to rate our Baked Dishes?</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="Banana Choco chip Muffin">Excellent</option>
+            <option value="Pastel de Chocolate">Good</option>
+            <option value="Cheese Roll">Satisfactory</option>
+            <option value="Platters">I have not tried them yet</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="country">How would you like to rate our Cheese Rolls?</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="Banana Choco chip Muffin">Excellent</option>
+            <option value="Pastel de Chocolate">Good</option>
+            <option value="Cheese Roll">Satisfactory</option>
+            <option value="Platters">I have not tried them yet</option>
+          </select>
+        </div>
+      </div>
+      
+
+        <div class="row">
+        <div class="col-25">
+            <label for="fname">Please rate our overall products and Services?</label>
+        </div>
+        <div class="col-75">
+
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+        </div></div>
+            
+            
+      <div class="row"></br>
+        <div class="col-25"></br>
+          <label for="subject">Message</label>
+        </div>
+        <div class="col-75"></br>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row"></br>
+        <button id="b" type="submit" value="submit">Submit</button>
+      <button id="b" type="reset" value="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+
+<style>
+
+h1{
+  text-align: center;
+  font-weight: bold;
+  color: var(--brown);
+  text-shadow: 1px 1px 1px black;
+  font-size: 40px;
+}
+
+button[type=submit] {
+  background-color: #332310;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+  
+button[type=reset] {
+  background-color: #332310;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+}
+
+button:hover {
+  background-color: #756334;
+}
+  
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+
+.rate:not(:checked) > label:before {
+   content: '★ ';
+}
+
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+legend { 
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+}
+
+form {
+  margin-left: 60px;
+  margin-right: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 30px;
+  margin-bottom: 100px;
+  background-image: url(bg.gif);
+  background-size: cover;
+  border-radius: 20px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  outline: none;
+  background-color: #e7bf8e;
+}
+
+input[type="checkbox"]:checked:before {
+  content: "✓";
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #aaa;
+}
+
+input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 2px #ccc;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=number], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=email], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 17px;
+  margin-left: 40px;
+}
+
+input[type=submit] {
+  background-color: #332310;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=reset] {
+  background-color: #332310;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+
+<!--SEARCH FORM-->
+  <form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+  </form>
+<!--SEARCH FORM-->
+
+<script src="script.js"></script>
+
+<!--newsletter-->
+
+<section class="newsletter">
+
+<h3>Subscribe to the Newsletter and stay up-to-date</h3>
+
+<form action="">
+  <input class="box" type="email" placeholder="Enter your email"> 
+  &nbsp;&nbsp;
+  <input type="submit" value="Subscribe" class="btn">
+</form>
+
+</section>
+
+<!--newsletter ends-->
+
+<!--footer-->
+
+<section class="footer" style="background-color: #f4efef;">
+
+  <div class="box-container">
+
+      <div class="box">
+
+          <a href="#"><img src="logo.png" alt="logo" style="width: 200px; margin-left: 50px;"></a>
+
+          
+          
+          <br>
+          <div class="socials">
+              <a href="https://www.instagram.com/swarovski/?hl=en" class="fab fa-instagram"> Instagram</a>
+              <a href="https://web.facebook.com/SWAROVSKI.global/?_rdc=1&_rdr" class="fab fa-facebook"> Facebook</a>
+              <a href="https://twitter.com/swarovski?fbclid=IwAR1nsQcR9nTZJdjhUxvQR3IouSHzBuZjYMmNP_6Lr3pP_1GSbDLVZQI1h4k" class="fab fa-twitter"> Twitter</a>
+              <a href="https://www.tiktok.com/@swarovski?lang=en" class="fab fa-tiktok"> Tiktok</a>
+          </div>
+      </div>
+
+      <div class="box">
+          <h3>Navigation</h3>
+          <div class="links">
+              <a href="#">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Menu</a>
+              <a href="#">Feedback</a>
+              <a href="#">Order Now</a>
+              <a href="#">Contact Us</a>
+          </div>
+      </div>
+
+      <div class="box">
+          <h3>Your Account</h3>
+          <div class="links">
+              <a href="#">My Shopping Bag</a>
+              <a href="#">My Favourites</a>
+              <a href="#">My Shipping Address</a>
+              <a href="#">My Orders</a>
+          </div>
+      </div>
+
+      <div class="box">
+          <h3>Our Contacts</h3>
+          <div class="links">
+              <a href="#">(02) 7915 6213</a>
+              <a href="#">purpleswan@gmail.com</a>
+              <a href="#">Level 1, Ayala Life Center, Greenbelt 3 Esperanza St, Makati, Metro Manila</a>
+              <img src="payment.png" alt="payment">
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">created by <span>NAMES OF GROUP MEMBERS &copy;</span> all rights reserved (2023)</h1>
+
+<!--footer ends-->
+
+    </body>
+</html>
+

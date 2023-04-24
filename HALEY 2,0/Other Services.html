@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confections by Clarenz - Other Services</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--HEADER-->
+            <header>
+                    <a href="#" class="logo"><img src="logo.png" height="50px"></a>
+                    
+                    <nav class="navbar">
+                        <a href="#">Home</a>
+                        <a href="About Us.html">About Us</a>
+                        <div class="dropdown">
+                            <a href="main-menu.html">Menu</a>
+                            <div class="dropdown-content">
+                                <a href="signatures-menu.html">Signatures</a>
+                                <a href="cakes-menu.html">Cakes, Pastries, and Bread</a>
+                                <a href="baked-menu.html">Baked Dishes</a>
+                            </div></div>
+                        <div class="dropdown">
+                            <a href="Feedback.html">Feedback</a>
+                            <div class="dropdown-content">
+                                <a href="Testimonials.html">Testimonials</a>
+                                <a href="Customer Gallery.html">Customer Gallery</a>
+                            </div></div>
+                        <div class="dropdown">
+                            <a href="#">Order Now</a>
+                            <div class="dropdown-content">
+                                <a class="active" href="Other Services.html">Other Services</a>
+                            </div></div>
+                        </div>
+                        <a href="Contact Us.html">Contact Us</a>
+                    </nav>
+
+                    <div class="icons">
+                        <i class="fas fa-bars" id="menu-bars"></i>
+                        <i class="fas fa-search" id="search-icon"></i>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+            </header>
+        <!--HEADER-->
+
+<section style="background-color: #f4efef;">
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="m1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="m2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="m3.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="m4.png" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="m5.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+</br>
+
+</section>
+
+<style>
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    color: var(--brown);
+    text-shadow: 1px 1px 1px black;
+    font-size: 40px;
+}
+
+* {box-sizing:border-box}
+
+
+
+.slideshow-container {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+</style>
+
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<center><img src="services-logo.png" style = "width: 120px; margin-left: auto; margin-right: auto; display: block; padding-top: 3rem;">
+  <h1>ORDER NOW</h1></center>
+</br></br>
+<div class="container" >
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row"></br>
+      <div class="col-25">
+        <label for="lname">Number</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="number" name="number" placeholder="Your mobile number..">
+      </div>
+    </div>
+
+    <div class="row"></br>
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email address..">
+      </div>
+    </div>
+
+    <div class="row"></br></br>
+      <div class="col-25">
+        <label for="country">Payment Option</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="Banana Choco chip Muffin">Cash</option>
+          <option value="Pastel de Chocolate">CreditCard</option>
+          <option value="Cheese Roll">Debit Card</option>
+          <option value="Platters">Gcash</option>
+        </select>
+      </div>
+    </div>
+    
+    <hr>
+      <div class="row"></br>
+      <div class="col-25">
+          <label for="fname">Products</label>
+      </div>
+      <div class="col-75">
+
+          <div class="item"></br>
+
+          </br>
+          <h2>Pastel de Chocolate</h2></br>
+          <div class="price-options">
+              <label>
+                  <input type="checkbox" name="pastel de Chocolate-price" value="75"> &nbsp;
+                  Small/Solo: P75
+                </label>
+                <label>
+                  <input type="checkbox" name="pastel de Chocolate-price" value="200"> &nbsp;
+                  Medium: P 200
+                </label>
+                <label>
+                  <input type="checkbox" name="pastel de Chocolate-price" value="300">&nbsp;
+                  Big: P 300
+                </label>
+                <label>
+                    <input type="checkbox" name="pastel de Chocolate-price" value="450">&nbsp;
+                  Square Pan: P 450
+                </label></br>
+          </div>
+          
+      </br>
+          <h2>Banana Choco chip Muffin</h2></br>
+          <div class="price-options">
+            <label>
+              <input type="checkbox" name="muffin-price" value="200">&nbsp;
+              Box of 4: P 200
+            </label>
+            <label>
+              <input type="checkbox" name="muffin-price" value="300">&nbsp;
+              Box of 6: P 300
+            </label>
+            <label>
+              <input type="checkbox" name="muffin-price" value="600">&nbsp;
+              Box of 12: P 600
+            </label></br>
+          </div>
+
+              <h2>Cheese Rolls</h2></br>
+              <div class="price-options">
+                  <label>
+                    <input type="checkbox" name="cheese roll-price" value="200">&nbsp;
+                    Box of 6: P200
+                  </label>
+                  <label>
+                    <input type="checkbox" name="cheese roll-price" value="450">&nbsp;
+                    Box of 12: P 450
+                  </label></br>
+                </div></div>
+              
+              </br>
+              <h2>Cakes</h2></br>
+              <div class="price-options">
+                  <label>
+                      <input type="checkbox" name="pastel de Chocolate-price" value="75">&nbsp;
+                      Celebration Cake: P500
+                    </label>
+                    <label>
+                      <input type="checkbox" name="pastel de Chocolate-price" value="200">&nbsp;
+                      Ube Cake: P500
+                    </label>
+              </div>
+
+              </br>
+            <h2>Baked Dishes</h2></br>
+              <div class="price-options">
+                <label>
+                  <input type="checkbox" name="platter-price" value="1800">&nbsp;
+                  Baked Spaghetti: P500
+                </label>
+                <label>
+                  <input type="checkbox" name="platter-price" value="1000">&nbsp;
+                  Baked Lasagna: P500
+                </label>
+                <label>
+                  <input type="checkbox" name="platter-price" value="1000">&nbsp;
+                  Baked Chicken Lemon: P500
+                </label></br>
+              </div>
+
+          </br>
+              <h2>Platters</h2></br>
+              <div class="price-options">
+                <label>
+                  <input type="checkbox" name="platter-price" value="1800">&nbsp;
+                  Fiesta: P1800
+                </label>
+                <label>
+                  <input type="checkbox" name="platter-price" value="1000">&nbsp;
+                  Family Meal Plan P900
+                </label></br>
+              </div>
+            </div>
+          
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Message</label>
+      </div>
+      <div class="col-75"></br>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row"></br>
+      <button id="b" type="submit" value="submit">Submit</button>
+      <button id="b" type="reset" value="reset">Reset</button>
+
+    </div>
+  </form>
+</div>
+
+</br>
+
+<style>
+        
+legend { 
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+}
+
+form {
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 30px;
+  background-color: #e8dfd3;
+  background-image: url(bg.gif);
+  background-size: cover;
+  }
+  
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  outline: none;
+  background-color: #e7bf8e;
+}
+  
+input[type="checkbox"]:checked:before {
+  content: "✓";
+  color: #000000;
+  font-size: 11px;
+  text-align: center;
+  line-height: 15px;
+}
+  
+input[type="checkbox"]:hover {
+  border-color: #aaa;
+}
+  
+input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 2px #ccc;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+  
+input[type=number], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+  
+input[type=email], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+  
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 17px;
+  margin-left: 40px;
+}
+  
+button[type=submit] {
+  background-color: #332310;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+  
+button[type=reset] {
+  background-color: #332310;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+}
+
+button:hover {
+  background-color: #756334;
+}
+  
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit], input[type=reset] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+
+<!--SEARCH FORM-->
+  <form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+  </form>
+<!--SEARCH FORM-->
+
+<script src="script.js"></script>
+
+<!--newsletter-->
+
+<section class="newsletter" style="margin-top: 100px;">
+
+<h3>Subscribe to the Newsletter and stay up-to-date</h3>
+
+<form action="">
+<input class="box" type="email" placeholder="Enter your email">
+&nbsp;&nbsp;
+<input type="submit" value="Subscribe" class="btn">
+</form>
+
+</section>
+
+<!--newsletter ends-->
+
+<!--footer-->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+
+            <a href="#"><img src="logo.png" alt="logo" style="width: 200px; margin-left: 50px;"></a>
+
+            
+            
+            <br>
+            <div class="socials">
+                <a href="https://www.instagram.com/swarovski/?hl=en" class="fab fa-instagram"> Instagram</a>
+                <a href="https://web.facebook.com/SWAROVSKI.global/?_rdc=1&_rdr" class="fab fa-facebook"> Facebook</a>
+                <a href="https://twitter.com/swarovski?fbclid=IwAR1nsQcR9nTZJdjhUxvQR3IouSHzBuZjYMmNP_6Lr3pP_1GSbDLVZQI1h4k" class="fab fa-twitter"> Twitter</a>
+                <a href="https://www.tiktok.com/@swarovski?lang=en" class="fab fa-tiktok"> Tiktok</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Navigation</h3>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Menu</a>
+                <a href="#">Feedback</a>
+                <a href="#">Order Now</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Your Account</h3>
+            <div class="links">
+                <a href="#">My Shopping Bag</a>
+                <a href="#">My Favourites</a>
+                <a href="#">My Shipping Address</a>
+                <a href="#">My Orders</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Our Contacts</h3>
+            <div class="links">
+                <a href="#">(02) 7915 6213</a>
+                <a href="#">purpleswan@gmail.com</a>
+                <a href="#">Level 1, Ayala Life Center, Greenbelt 3 Esperanza St, Makati, Metro Manila</a>
+                <img src="payment.png" alt="payment">
+            </div>
+        </div>
+    </div>
+
+    <h1 class="credit">created by <span>NAMES OF GROUP MEMBERS &copy;</span> all rights reserved (2023)</h1>
+
+<!--footer ends-->
+
+    </body>
+</html>
+
